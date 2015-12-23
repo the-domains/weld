@@ -1,7 +1,8 @@
-analytics:
-  twitter: null
-  google: null
-  facebook: null
+favicon: null
+cta:
+  bucket: null
+  version: null
+  domain: null
 opengraph:
   image: null
   type: null
@@ -12,26 +13,25 @@ collections:
       number: 15
       paginate: true
       navigable: true
-    permalink:
-      path: '/:title/'
     feed:
       path: /rss.xml
       format: rss
       number: 10
+    permalink:
+      path: '/:title/'
 purpose: []
 color:
   saturation: 1
-  lightness: 1
   brandStrength: 0.5966111517045647
+  rhythmicContrast: 0
   brandColors:
     - '#CCCCCC'
     - '#FFFFFF'
-  rhythmicContrast: 0
-typography_spectrum: 0.702509
-cta:
-  bucket: null
-  version: null
-  domain: null
+  lightness: 1
+typography_spectrum: 0.7706093
 layout_spectrum: 0
-favicon: null
+analytics:
+  twitter: null
+  google: null
+  facebook: null
 name: Weld
