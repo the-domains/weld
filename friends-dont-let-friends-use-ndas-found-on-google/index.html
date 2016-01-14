@@ -1,4 +1,4 @@
-<!DOCTYPE HTML><html class="exporting wf-loading"><head><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/><title>Friends Don't Let Friends Use NDAs Found On Google - Weld</title><link href="../rss.xml" title="Weld feed" rel="alternate" type="application/rss+xml"/><meta name="generator" content="The Grid taylor/0.16.25"><meta name="the-grid-solution" content="2ba84373-6eae-4bc8-9290-27894dea27e6"><style href="./css/scale/mini.css" media="(max-width: 19.9376em)" rel="stylesheet">@media (max-width: 15.625em){html{font-size:3.09375em !important}}
+<!DOCTYPE HTML><html class="exporting wf-loading"><head><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/><title>Friends Don't Let Friends Use NDAs Found On Google - Weld</title><link href="../rss.xml" title="Weld feed" rel="alternate" type="application/rss+xml"/><meta name="generator" content="The Grid taylor/0.17.3"><meta name="the-grid-solution" content="e7c0722f-f119-47c0-a306-bba1c565ea97"><style href="./css/scale/mini.css" media="(max-width: 19.9376em)" rel="stylesheet">@media (max-width: 15.625em){html{font-size:3.09375em !important}}
 @media (min-width: 15.6875em)and (max-width: 15.75em){	html{font-size:3.28125em !important}}
 @media (min-width: 15.8125em)and (max-width: 16.25em){	html{font-size:3.375em !important}}
 @media (min-width: 16.3125em)and (max-width: 16.6875em){html{font-size:3.46875em !important}}
@@ -202,6 +202,14 @@ body {
 }
 .stack {
   z-index: 1;
+  transition: transform 0.3s ease-out;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+}
+.group,
+.aside,
+.decoration {
+  transition: transform 0.3s ease-out;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
 }
 picture {
   display: inline-block;
@@ -250,6 +258,9 @@ a:active {
   transition: color 0.1s ease-in, background-color 0.1s ease-out;
   -webkit-transition: color 0.1s ease-in, background-color 0.1s ease-out;
 }
+a.aside {
+  display: inline-block;
+}
 html.exporting a {
   transition: none;
 }
@@ -259,11 +270,21 @@ html.exporting a {
 .media > a {
   display: inline-block;
 }
+.media iframe {
+  transition: 0.3s opacity ease-in;
+  -webkit-transition: 0.3s opacity ease-in;
+}
 h1 a,
 h2 a,
 h3 a {
   font-weight: inherit;
   letter-spacing: inherit;
+}
+a {
+  -webkit-box-decoration-break: clone;
+  -ms-box-decoration-break: clone;
+  -moz-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 .text-decoration {
   -webkit-box-decoration-break: clone;
@@ -277,36 +298,50 @@ h3 a {
   margin-left: 1.5em;
 }
 .decoration {
-  position: relative;
   pointer-events: none;
+}
+.svg {
+  position: relative;
   background-color: currentColor;
 }
-.decoration > svg {
+.svg > svg {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.decoration.connector > svg {
+.svg.connector > svg {
   width: 109%;
   height: 109%;
   margin-left: -2%;
 }
-.decoration path,
-.decoration ellipse,
-.decoration rect,
-.decoration polygon,
-.decoration circle {
+.svg path,
+.svg ellipse,
+.svg rect,
+.svg polygon,
+.svg circle {
   fill: currentColor;
 }
-.decoration mpath,
-.decoration line,
-.decoration polyline {
+.svg mpath,
+.svg line,
+.svg polyline {
   stroke: currentColor;
 }
-.svg.decoration {
+.svg {
   background-color: transparent;
+}
+.revealed .play.svg:after {
+  display: block;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin-top: -20px;
+  margin-left: -20px;
+  background-color: currentColor;
+  content: "";
 }
 .colors-style-aside-border .publisher,
 .colors-style-aside-border .author {
@@ -915,7 +950,7 @@ wbr.w1800{ display: block }
  #u-65475278-a434-4ddb-9cb4-7ae9db6395d5-desktop-l-one-3 {
 display: none;
 }
-}</style></head><body><div class="layout-system rust mobile" id="page-65475278-a434-4ddb-9cb4-7ae9db6395d5"><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-mobile-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-mobile-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w_headline w_title w_paragraph w_text w_separator w_decoration w_leader w_medium_headline w_medium_title w_long_paragraph w_long_text w_list w_data w_medium_paragraph w_medium_text w_long_list w_long_data layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-mobile-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_texts colors-use-same-as-previous layout one i first_layout last_layout article layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-mobile-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-mobile-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-mobile-l-one-3-l-one"></div><style id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-color">body{background-color: rgba(230, 230, 230, 1)}</style></section><article subject="panel" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_center uninverted vertical collapsed full line_padding_aside_inside text_width_full group_h_align_none text_align_center flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_small panel stack heading i first_panel last_panel w_headline w_title w_decoration w_short_headline w_short_title stack heading" itemid="u-page-nav" itemtype="nav" diff_index="2" index="heading" kind="stack" score="1.875" missed="0.125" tag="article" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-nav"><div kind="group" index="heading" class="group heading group heading" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-nav-g-heading"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-nav-g-heading-t-headline"><a class="text-decoration" href="../index.html" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-nav-g-heading-t-headline-a">Weld</a></h1></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_large chapter stack textual i first_chapter w_headline w_title w_paragraph w_text w_separator w_decoration w_medium_headline w_medium_title w_long_paragraph w_long_text stack textual" itemid="ae4f59b7-63b5-49aa-8a58-bccbeeb9adc4" itemtype="text" diff_index="4" index="textual" kind="stack" score="5.625" missed="0.375" tag="article" id="u-ae4f59b7-63b5-49aa-8a58-bccbeeb9adc4"><div kind="group" index="textual" class="group textual group textual" id="u-ae4f59b7-63b5-49aa-8a58-bccbeeb9adc4-g-textual"><h1 kind="title" index="headline" class="medium medium_headline medium_title title headline vfld-leader title headline" specificity="0.25" itemprop="title" id="u-ae4f59b7-63b5-49aa-8a58-bccbeeb9adc4-g-textual-t-headline"><span class="text-decoration" id="u-ae4f59b7-63b5-49aa-8a58-bccbeeb9adc4-g-textual-t-headline-span">Friends Don't Let <wbr class="w480 w960"></wbr>Friends <wbr class="w481 w961 w1799"></wbr>Use NDAs <wbr class="w480 w960 w1800"></wbr>Found On <wbr class="w1799"></wbr>Google</span></h1><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-ae4f59b7-63b5-49aa-8a58-bccbeeb9adc4-g-textual-t-paragraph"><p><span class="first-letter">S</span><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>tart-ups are hard. And not without expense. It's tempting in <wbr class="w480 w960"></wbr>the early stages to avoid certain <wbr class="w481 w961 w1799"></wbr>costs and in particular <wbr class="w480 w960"></wbr>expenses <wbr class="w1800"></wbr>that don't immediately appear to give you a lot of value <wbr class="w480 w960"></wbr>for <wbr class="w481 w961 w1799"></wbr>your money. This is especially true of legal services. When <wbr class="w480 w960"></wbr>you are <wbr class="w1800"></wbr>at the early stages of your <wbr class="w481 w961 w1799"></wbr>venture, you are more likely to <wbr class="w480 w960"></wbr>forego legal formality. You may even find yourself Googling for a <wbr class="w480 w481 w960 w961 w1799"></wbr>non-<wbr class="w1800"></wbr>disclosure agreement, thinking it's probably good enough <wbr class="w480 w960"></wbr>to protect your interests until you <wbr class="w481 w961 w1799"></wbr>have more funding later.</p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>C</span>an you use an NDA found on Google to shop your start-up idea <wbr class="w480 w960"></wbr>/ prototype around? Sure. <wbr class="w481 w961 w1799"></wbr>Absolutely. Do your thing. But should <wbr class="w480 w960"></wbr>you <wbr class="w1800"></wbr>use that NDA? Probably not. Why? Well, there's a lot of <wbr class="w480 w481 w960 w961 w1799"></wbr>things to think about when entering into a non-disclosure <wbr class="w480 w960"></wbr>agreement with <wbr class="w1800"></wbr>someone, particularly <wbr class="w481 w961 w1799"></wbr>if you're the disclosing <wbr class="w480 w960"></wbr>party. And many of those "basic" NDAs offered for "free" on <wbr class="w480 w960"></wbr>Google either <wbr class="w481 w961 w1799"></wbr>don't <wbr class="w1800"></wbr>address these things or do so in a deficient <wbr class="w480 w960"></wbr>way.</p></div><div kind="decoration" index="separator" class="decoration separator decoration separator" id="u-ae4f59b7-63b5-49aa-8a58-bccbeeb9adc4-g-textual-d-separator"></div></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack column i last_chapter w_paragraph w_text w_list w_data w_medium_paragraph w_medium_text w_long_list w_long_data stack column" itemid="526ce26a-720d-4574-a572-9605926d50f8" itemtype="text" diff_index="1" index="column" kind="stack" score="2.75" missed="0.25" tag="article" id="u-526ce26a-720d-4574-a572-9605926d50f8"><div kind="group" index="column" class="group column group column" id="u-526ce26a-720d-4574-a572-9605926d50f8-g-column"><div kind="text" index="paragraph" class="text-decoration medium medium_paragraph medium_text text paragraph vfld-leader text paragraph" specificity="0.25" itemprop="text" id="u-526ce26a-720d-4574-a572-9605926d50f8-g-column-t-paragraph"><p><span class="first-letter">H</span>ere's a quick list of bare minimum things your NDA should <wbr class="w480 w960"></wbr>cover if you're planning on <wbr class="w481 w961"></wbr>disclosing <wbr class="w1799"></wbr>information to a recipient <wbr class="w480 w960"></wbr>under <wbr class="w1800"></wbr>the agreement:</p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>A</span> lot of NDAs offered for free on the web simply don't address <wbr class="w480 w960"></wbr>these issues. So you can use them. <wbr class="w481 w961 w1799"></wbr>But it's buyer beware. Paying <wbr class="w480 w960 w1800"></wbr>nothing for your NDA may mean it's worth just that much, and <wbr class="w480 w960 w1799"></wbr>that's <wbr class="w481 w961"></wbr>not a particularly fun thing to find out once your <wbr class="w480 w960"></wbr>information <wbr class="w1800"></wbr>is in the market.</p></div><ul kind="data" index="list" class="long long_list long_data data list vfld-trailer data list" specificity="0.25" itemprop="list" id="u-526ce26a-720d-4574-a572-9605926d50f8-g-column-d-list"><li><strong>The definition of confidential information:</strong>is it limited to <wbr class="w480 w960"></wbr>information that you own? Or <wbr class="w481 w961 w1799"></wbr>information that you are in <wbr class="w480 w960"></wbr>possession <wbr class="w1800"></wbr>of? These are not the same thing.</li><li><strong><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>The purpose of the NDA:</strong>does your NDA have one? Is the use <wbr class="w480 w960"></wbr>of the confidential information <wbr class="w481 w961 w1799"></wbr>limited to that purpose, or can <wbr class="w480 w960"></wbr>the <wbr class="w1800"></wbr>recipient party use the information for whatever purpose it <wbr class="w480 w481 w960 w961 w1799"></wbr>wants?</li><li><strong><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>The scope of confidential information:</strong>does the definition of <wbr class="w480 w960"></wbr>confidential information include <wbr class="w481 w961 w1799"></wbr>oral disclosures of confidential <wbr class="w480 w960 w1800"></wbr>information? Do you have to reduce all confidential information <wbr class="w480 w481 w960 w961 w1799"></wbr>to writing, or does the agreement allow you to argue and prove, <wbr class="w480 w960 w1800"></wbr>based on verbal evidence, the <wbr class="w481 w961 w1799"></wbr>confidential information that was <wbr class="w480 w960"></wbr>conveyed to the recipient?</li><li><strong><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>The use that can be made of the confidential information by <wbr class="w480 w960"></wbr>employees of the <wbr class="w481 w961 w1799"></wbr>recipient:</strong>who gets to use the information, <wbr class="w480 w960 w1800"></wbr>and on what basis?</li><li><strong><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>Rights of audit and inspection:</strong>does your agreement give you <wbr class="w480 w960"></wbr>such rights? If not, what's your <wbr class="w481 w961 w1799"></wbr>plan to enforce your NDA, <wbr class="w480 w960 w1800"></wbr>assuming the recipient will never admit it used your confidential <wbr class="w480 w481 w960 w961 w1799"></wbr>information to do something and you don&#x2019;t have access to their <wbr class="w480 w960 w1800"></wbr>records?</li><li><strong><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>Loss of confidentiality:</strong>when does your confidential <wbr class="w480 w960"></wbr>information lose its quality of <wbr class="w481 w961 w1799"></wbr>confidentiality? When it becomes <wbr class="w480 w960"></wbr>&#x201C;generally <wbr class="w1800"></wbr>available to the public&#x201D; or merely &#x201C;publicly <wbr class="w480 w481 w960 w961 w1799"></wbr>disclosed&#x201D;? These are not the same thing.</li><li><strong><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>IP claims:</strong>what does your NDA say about the recipient <wbr class="w480 w960"></wbr>company patenting technology that <wbr class="w481 w961 w1799"></wbr>contains your confidential <wbr class="w480 w960 w1800"></wbr>information? What if they claim ownership over derivatives of <wbr class="w480 w960"></wbr>your <wbr class="w481 w961 w1799"></wbr>confidential information?</li><li><strong><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>Jurisdiction and choice of law:</strong>what laws will apply to the <wbr class="w480 w960"></wbr>interpretation of your agreement <wbr class="w481 w961 w1799"></wbr>and can you even enforce it in <wbr class="w480 w960"></wbr>your <wbr class="w1800"></wbr>start-ups jurisdiction?</li></ul></div></article><article subject="panel" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_center uninverted vertical collapsed full line_padding_aside_inside text_width_full group_h_align_none text_align_center flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_small panel stack heading i first_panel last_panel w_headline w_title w_decoration w_short_headline w_short_title stack heading" itemid="u-page-alternate" itemtype="alternate" diff_index="2" index="heading" kind="stack" score="1.875" missed="0.125" tag="article" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-alternate"><div kind="group" index="heading" class="group heading group heading" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-alternate-g-heading"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-alternate-g-heading-t-headline"><a class="text-decoration" href="../rss.xml" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-alternate-g-heading-t-headline-a">Weld feed</a></h1></div></article><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-desktop-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-desktop-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w_headline w_title w_paragraph w_text w_separator w_decoration w_leader w_medium_headline w_medium_title w_long_paragraph w_long_text w_list w_data w_medium_paragraph w_medium_text w_long_list w_long_data layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-desktop-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_texts colors-use-same-as-previous layout one i first_layout last_layout article layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-desktop-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-desktop-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-desktop-l-one-3-l-one"></div><style id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-color">body{background-color: rgba(230, 230, 230, 1)}</style></section><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-cinema-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-cinema-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w_headline w_title w_paragraph w_text w_separator w_decoration w_leader w_medium_headline w_medium_title w_long_paragraph w_long_text w_list w_data w_medium_paragraph w_medium_text w_long_list w_long_data layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-cinema-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_texts colors-use-same-as-previous layout one i first_layout last_layout article layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-cinema-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-cinema-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-cinema-l-one-3-l-one"></div><style id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-color">body{background-color: rgba(230, 230, 230, 1)}</style></section></div><script href="./client.js">(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+}</style></head><body><div class="layout-system rust mobile" id="page-65475278-a434-4ddb-9cb4-7ae9db6395d5"><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-mobile-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-mobile-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w_headline w_title w_paragraph w_text w_separator w_decoration w_leader w_medium_headline w_medium_title w_long_paragraph w_long_text w_list w_data w_medium_paragraph w_medium_text w_long_list w_long_data layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-mobile-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_texts colors-use-same-as-previous layout one i first_layout last_layout article layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-mobile-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-mobile-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-mobile-l-one-3-l-one"></div><style id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-color">body{background-color: rgba(230, 230, 230, 1)}</style></section><article subject="panel" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_center uninverted vertical collapsed full line_padding_aside_inside text_width_full group_h_align_none text_align_center flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_small panel stack heading i first_panel last_panel w_headline w_title w_decoration w_short_headline w_short_title stack heading" itemid="u-page-nav" itemtype="nav" diff_index="2" index="heading" kind="stack" score="1.875" missed="0.125" tag="article" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-nav"><div kind="group" index="heading" class="group heading group heading" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-nav-g-heading"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-nav-g-heading-t-headline"><a class="text-decoration" href="../index.html" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-nav-g-heading-t-headline-a">Weld</a></h1></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_large chapter stack textual i first_chapter w_headline w_title w_paragraph w_text w_separator w_decoration w_medium_headline w_medium_title w_long_paragraph w_long_text stack textual" itemid="ae4f59b7-63b5-49aa-8a58-bccbeeb9adc4" itemtype="text" diff_index="4" index="textual" kind="stack" score="1.625" missed="0.375" tag="article" id="u-ae4f59b7-63b5-49aa-8a58-bccbeeb9adc4"><div kind="group" index="textual" class="group textual group textual" id="u-ae4f59b7-63b5-49aa-8a58-bccbeeb9adc4-g-textual"><h1 kind="title" index="headline" class="medium medium_headline medium_title title headline vfld-leader title headline" specificity="0.25" itemprop="title" id="u-ae4f59b7-63b5-49aa-8a58-bccbeeb9adc4-g-textual-t-headline"><span class="text-decoration" id="u-ae4f59b7-63b5-49aa-8a58-bccbeeb9adc4-g-textual-t-headline-span">Friends Don't Let <wbr class="w480 w960"></wbr>Friends <wbr class="w481 w961 w1799"></wbr>Use NDAs <wbr class="w480 w960 w1800"></wbr>Found On <wbr class="w1799"></wbr>Google</span></h1><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-ae4f59b7-63b5-49aa-8a58-bccbeeb9adc4-g-textual-t-paragraph"><p><span class="first-letter">S</span><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>tart-ups are hard. And not without expense. It's tempting in <wbr class="w480 w960"></wbr>the early stages to avoid certain <wbr class="w481 w961 w1799"></wbr>costs and in particular <wbr class="w480 w960"></wbr>expenses <wbr class="w1800"></wbr>that don't immediately appear to give you a lot of value <wbr class="w480 w960"></wbr>for <wbr class="w481 w961 w1799"></wbr>your money. This is especially true of legal services. When <wbr class="w480 w960"></wbr>you are <wbr class="w1800"></wbr>at the early stages of your <wbr class="w481 w961 w1799"></wbr>venture, you are more likely to <wbr class="w480 w960"></wbr>forego legal formality. You may even find yourself Googling for a <wbr class="w480 w481 w960 w961 w1799"></wbr>non-<wbr class="w1800"></wbr>disclosure agreement, thinking it's probably good enough <wbr class="w480 w960"></wbr>to protect your interests until you <wbr class="w481 w961 w1799"></wbr>have more funding later.</p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>C</span>an you use an NDA found on Google to shop your start-up idea <wbr class="w480 w960"></wbr>/ prototype around? Sure. <wbr class="w481 w961 w1799"></wbr>Absolutely. Do your thing. But should <wbr class="w480 w960"></wbr>you <wbr class="w1800"></wbr>use that NDA? Probably not. Why? Well, there's a lot of <wbr class="w480 w481 w960 w961 w1799"></wbr>things to think about when entering into a non-disclosure <wbr class="w480 w960"></wbr>agreement with <wbr class="w1800"></wbr>someone, particularly <wbr class="w481 w961 w1799"></wbr>if you're the disclosing <wbr class="w480 w960"></wbr>party. And many of those "basic" NDAs offered for "free" on <wbr class="w480 w960"></wbr>Google either <wbr class="w481 w961 w1799"></wbr>don't <wbr class="w1800"></wbr>address these things or do so in a deficient <wbr class="w480 w960"></wbr>way.</p></div><div kind="decoration" index="separator" class="decoration separator decoration separator" id="u-ae4f59b7-63b5-49aa-8a58-bccbeeb9adc4-g-textual-d-separator"></div></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack column i last_chapter w_paragraph w_text w_list w_data w_medium_paragraph w_medium_text w_long_list w_long_data stack column" itemid="526ce26a-720d-4574-a572-9605926d50f8" itemtype="text" diff_index="1" index="column" kind="stack" score="0.75" missed="0.25" tag="article" id="u-526ce26a-720d-4574-a572-9605926d50f8"><div kind="group" index="column" class="group column group column" id="u-526ce26a-720d-4574-a572-9605926d50f8-g-column"><div kind="text" index="paragraph" class="text-decoration medium medium_paragraph medium_text text paragraph vfld-leader text paragraph" specificity="0.25" itemprop="text" id="u-526ce26a-720d-4574-a572-9605926d50f8-g-column-t-paragraph"><p><span class="first-letter">H</span>ere's a quick list of bare minimum things your NDA should <wbr class="w480 w960"></wbr>cover if you're planning on <wbr class="w481 w961"></wbr>disclosing <wbr class="w1799"></wbr>information to a recipient <wbr class="w480 w960"></wbr>under <wbr class="w1800"></wbr>the agreement:</p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>A</span> lot of NDAs offered for free on the web simply don't address <wbr class="w480 w960"></wbr>these issues. So you can use them. <wbr class="w481 w961 w1799"></wbr>But it's buyer beware. Paying <wbr class="w480 w960 w1800"></wbr>nothing for your NDA may mean it's worth just that much, and <wbr class="w480 w960 w1799"></wbr>that's <wbr class="w481 w961"></wbr>not a particularly fun thing to find out once your <wbr class="w480 w960"></wbr>information <wbr class="w1800"></wbr>is in the market.</p></div><ul kind="data" index="list" class="long long_list long_data data list vfld-trailer data list" specificity="0.25" itemprop="list" id="u-526ce26a-720d-4574-a572-9605926d50f8-g-column-d-list"><li><strong>The definition of confidential information:</strong>is it limited to <wbr class="w480 w960"></wbr>information that you own? Or <wbr class="w481 w961 w1799"></wbr>information that you are in <wbr class="w480 w960"></wbr>possession <wbr class="w1800"></wbr>of? These are not the same thing.</li><li><strong><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>The purpose of the NDA:</strong>does your NDA have one? Is the use <wbr class="w480 w960"></wbr>of the confidential information <wbr class="w481 w961 w1799"></wbr>limited to that purpose, or can <wbr class="w480 w960"></wbr>the <wbr class="w1800"></wbr>recipient party use the information for whatever purpose it <wbr class="w480 w481 w960 w961 w1799"></wbr>wants?</li><li><strong><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>The scope of confidential information:</strong>does the definition of <wbr class="w480 w960"></wbr>confidential information include <wbr class="w481 w961 w1799"></wbr>oral disclosures of confidential <wbr class="w480 w960 w1800"></wbr>information? Do you have to reduce all confidential information <wbr class="w480 w481 w960 w961 w1799"></wbr>to writing, or does the agreement allow you to argue and prove, <wbr class="w480 w960 w1800"></wbr>based on verbal evidence, the <wbr class="w481 w961 w1799"></wbr>confidential information that was <wbr class="w480 w960"></wbr>conveyed to the recipient?</li><li><strong><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>The use that can be made of the confidential information by <wbr class="w480 w960"></wbr>employees of the <wbr class="w481 w961 w1799"></wbr>recipient:</strong>who gets to use the information, <wbr class="w480 w960 w1800"></wbr>and on what basis?</li><li><strong><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>Rights of audit and inspection:</strong>does your agreement give you <wbr class="w480 w960"></wbr>such rights? If not, what's your <wbr class="w481 w961 w1799"></wbr>plan to enforce your NDA, <wbr class="w480 w960 w1800"></wbr>assuming the recipient will never admit it used your confidential <wbr class="w480 w481 w960 w961 w1799"></wbr>information to do something and you don&#x2019;t have access to their <wbr class="w480 w960 w1800"></wbr>records?</li><li><strong><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>Loss of confidentiality:</strong>when does your confidential <wbr class="w480 w960"></wbr>information lose its quality of <wbr class="w481 w961 w1799"></wbr>confidentiality? When it becomes <wbr class="w480 w960"></wbr>&#x201C;generally <wbr class="w1800"></wbr>available to the public&#x201D; or merely &#x201C;publicly <wbr class="w480 w481 w960 w961 w1799"></wbr>disclosed&#x201D;? These are not the same thing.</li><li><strong><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>IP claims:</strong>what does your NDA say about the recipient <wbr class="w480 w960"></wbr>company patenting technology that <wbr class="w481 w961 w1799"></wbr>contains your confidential <wbr class="w480 w960 w1800"></wbr>information? What if they claim ownership over derivatives of <wbr class="w480 w960"></wbr>your <wbr class="w481 w961 w1799"></wbr>confidential information?</li><li><strong><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>Jurisdiction and choice of law:</strong>what laws will apply to the <wbr class="w480 w960"></wbr>interpretation of your agreement <wbr class="w481 w961 w1799"></wbr>and can you even enforce it in <wbr class="w480 w960"></wbr>your <wbr class="w1800"></wbr>start-ups jurisdiction?</li></ul></div></article><article subject="panel" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_center uninverted vertical collapsed full line_padding_aside_inside text_width_full group_h_align_none text_align_center flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_small panel stack heading i first_panel last_panel w_headline w_title w_decoration w_short_headline w_short_title stack heading" itemid="u-page-alternate" itemtype="alternate" diff_index="2" index="heading" kind="stack" score="1.875" missed="0.125" tag="article" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-alternate"><div kind="group" index="heading" class="group heading group heading" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-alternate-g-heading"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-alternate-g-heading-t-headline"><a class="text-decoration" href="../rss.xml" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-alternate-g-heading-t-headline-a">Weld feed</a></h1></div></article><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-desktop-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-desktop-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w_headline w_title w_paragraph w_text w_separator w_decoration w_leader w_medium_headline w_medium_title w_long_paragraph w_long_text w_list w_data w_medium_paragraph w_medium_text w_long_list w_long_data layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-desktop-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_texts colors-use-same-as-previous layout one i first_layout last_layout article layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-desktop-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-desktop-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-desktop-l-one-3-l-one"></div><style id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-color">body{background-color: rgba(230, 230, 230, 1)}</style></section><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-cinema-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-cinema-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w_headline w_title w_paragraph w_text w_separator w_decoration w_leader w_medium_headline w_medium_title w_long_paragraph w_long_text w_list w_data w_medium_paragraph w_medium_text w_long_list w_long_data layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-cinema-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_texts colors-use-same-as-previous layout one i first_layout last_layout article layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-cinema-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-cinema-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-cinema-l-one-3-l-one"></div><style id="u-65475278-a434-4ddb-9cb4-7ae9db6395d5-color">body{background-color: rgba(230, 230, 230, 1)}</style></section></div><script href="./client.js">(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 /*! Hammer.JS - v1.1.3 - 2014-05-20
  * http://eightmedia.github.io/hammer.js
  *
@@ -1442,9 +1477,11 @@ global.Hamburger = require('./hamburger');
 
 global.Highlighter = require('./highlighter');
 
+global.Player = require('./player');
+
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./animator":3,"./hamburger":4,"./highlighter":5,"./paginator":7,"hammerjs/hammer.min.js":1,"picturefill/dist/picturefill.min.js":2}],7:[function(require,module,exports){
+},{"./animator":3,"./hamburger":4,"./highlighter":5,"./paginator":7,"./player":8,"hammerjs/hammer.min.js":1,"picturefill/dist/picturefill.min.js":2}],7:[function(require,module,exports){
 var appendPage, mainpage, page, ref, ref1, urls;
 
 page = require('./reflow');
@@ -1545,7 +1582,192 @@ module.exports = function() {
 };
 
 
-},{"./reflow":8}],8:[function(require,module,exports){
+},{"./reflow":9}],8:[function(require,module,exports){
+var Player, Youtube, iframe, revealed, rgb2hex;
+
+iframe = null;
+
+Youtube = null;
+
+Player = function(id, src, width, height, color, bg) {
+  if (src.indexOf('youtube') > -1) {
+    src += '&color=white&theme=light&modestbranding=1';
+  }
+  src = src.replace('COLOR', color).replace('BG', bg);
+  if (location.protocol !== 'https:') {
+    src = src.replace('https:', 'http:');
+  }
+  iframe = document.createElement('iframe');
+  iframe.id = id;
+  iframe.setAttribute('allowfullscreen', '');
+  iframe.src = src;
+  iframe.width = width;
+  iframe.height = height;
+  iframe.style.width = '100%';
+  iframe.style.height = '100%';
+  iframe.style.left = 0;
+  iframe.style.right = 0;
+  iframe.style.position = 'absolute';
+  iframe.style.opacity = 0.2;
+  iframe.onload = function() {
+    return iframe.style.opacity = 1;
+  };
+  return iframe;
+};
+
+revealed = null;
+
+Player.reveal = function(iframe) {
+  var diff, i, left, len, parent, play, ref, ref1, sibling, target, top, translateX, translateY;
+  while (target = (target || iframe).parentNode) {
+    if ((ref = target.classList) != null ? ref.contains('media') : void 0) {
+      if (target.parentNode.classList.contains('group')) {
+        parent = target.parentNode;
+      } else {
+        parent = target;
+      }
+      revealed = iframe;
+      play = parent.getElementsByClassName('play')[0];
+      left = target.offsetWidth - play.offsetLeft - play.offsetWidth;
+      top = -play.offsetTop;
+      play.style.webkitTransformOrigin = 'top right';
+      play.style.webkitTransform = 'translateX(' + left + 'px) translateY(' + top + 'px) scale(0.5)';
+      target.classList.add('revealed');
+      ref1 = parent.parentNode.childNodes;
+      for (i = 0, len = ref1.length; i < len; i++) {
+        sibling = ref1[i];
+        if (sibling.nodeType === 1 && sibling !== parent) {
+          translateX = translateY = null;
+          if ((diff = sibling.offsetLeft + sibling.offsetWidth - parent.offsetLeft) > 2 && parent.offsetLeft >= sibling.offsetLeft) {
+            translateX = -diff;
+          }
+          if ((diff = target.offsetLeft + target.offsetWidth - sibling.offsetLeft) > 2 && parent.offsetLeft <= sibling.offsetLeft) {
+            if (!translateX || Math.abs(diff) < Math.abs(translateX)) {
+              translateX = diff;
+            }
+          }
+          if ((diff = sibling.offsetTop + sibling.offsetHeight - parent.offsetTop) > 2 && parent.offsetTop >= sibling.offsetTop) {
+            translateY = -diff;
+          }
+          if ((diff = target.offsetTop + target.offsetHeight - sibling.offsetTop) > 2 && parent.offsetTop <= sibling.offsetTop) {
+            if (!translateY || Math.abs(diff) < Math.abs(translateY)) {
+              translateY = diff;
+            }
+          }
+          if (Math.abs(translateX) > Math.abs(translateY)) {
+            sibling.style.webkitTransform = 'translateY(' + translateY + 'px)';
+          } else {
+            sibling.style.webkitTransform = 'translateX(' + translateX + 'px)';
+          }
+          console.log(translateX, translateY, sibling);
+        }
+      }
+    }
+  }
+};
+
+Player.hide = function(iframe) {
+  var i, len, parent, play, ref, ref1, sibling;
+  while (parent = (parent || iframe).parentNode) {
+    if ((ref = parent.classList) != null ? ref.contains('revealed') : void 0) {
+      parent.classList.remove('revealed');
+      if (parent.parentNode.classList.contains('group')) {
+        parent = parent.parentNode;
+      }
+      play = parent.getElementsByClassName('play')[0];
+      play.style.webkitTransform = '';
+      ref1 = parent.parentNode.childNodes;
+      for (i = 0, len = ref1.length; i < len; i++) {
+        sibling = ref1[i];
+        sibling.style.webkitTransform = '';
+      }
+    }
+  }
+  return revealed = null;
+};
+
+window.addEventListener('resize', function() {
+  return setTimeout(function() {
+    return requestAnimationFrame(function() {
+      if (revealed) {
+        if (revealed.offsetWidth) {
+          return Player.reveal(revealed);
+        } else {
+          return Player.stop(revealed);
+        }
+      }
+    });
+  }, 10);
+});
+
+Player.stop = function(iframe) {
+  var old;
+  old = iframe;
+  iframe.style.opacity = 0;
+  setTimeout(function() {
+    var ref;
+    return (ref = old.parentNode) != null ? ref.removeChild(old) : void 0;
+  }, 300);
+  Player.hide(iframe);
+  return iframe = null;
+};
+
+document.addEventListener('click', function(e) {
+  var bg, color, header, parent, play, ref, ref1, results, styles, target;
+  target = e.target;
+  results = [];
+  while (target) {
+    if ((ref = target.classList) != null ? ref.contains('media') : void 0) {
+      if (play = target.getElementsByClassName('play')[0]) {
+        if ((iframe != null ? iframe.parentNode : void 0) === target) {
+          Player.stop(iframe);
+        } else {
+          if (iframe) {
+            Player.stop(iframe);
+          }
+          color = bg = null;
+          header = (ref1 = target.parentNode.parentNode.getElementsByClassName('title')[0]) != null ? ref1.firstChild : void 0;
+          parent = header || play;
+          while (parent) {
+            if (parent.nodeType === 1) {
+              styles = window.getComputedStyle(parent);
+              if (styles.color.indexOf('rgba') === -1 || !styles.color.match(/,\s*0\)/)) {
+                if (color == null) {
+                  color = styles.color;
+                }
+              }
+              if (styles['background-color'].indexOf('rgba') === -1 || !styles['background-color'].match(/,\s*0\)/)) {
+                if (bg == null) {
+                  bg = styles['background-color'];
+                }
+              }
+            }
+            parent = parent.parentNode;
+          }
+          iframe = Player(play.id + '-player', play.getAttribute('data-src'), play.getAttribute('data-width'), play.getAttribute('data-height'), rgb2hex(color), rgb2hex(bg));
+          target.appendChild(iframe);
+          Player.reveal(iframe);
+        }
+        e.preventDefault();
+        break;
+      }
+    }
+    results.push(target = target.parentNode);
+  }
+  return results;
+});
+
+rgb2hex = function(rgb) {
+  rgb = rgb.match(/^rgba?[\s+]?\([\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?/i);
+  if (rgb && rgb.length === 4) {
+    return ("0" + parseInt(rgb[1], 10).toString(16)).slice(-2) + ("0" + parseInt(rgb[2], 10).toString(16)).slice(-2) + ("0" + parseInt(rgb[3], 10).toString(16)).slice(-2);
+  }
+};
+
+window.exports = window.Player = Player;
+
+
+},{}],9:[function(require,module,exports){
 module.exports = {
   reflow: function(container) {
     var counter, heights, hidden, hole, holed, holes, i, id, ids, index, j, k, l, last, layout, layouts, len, len1, len2, len3, m, mutations, name, node, ref, ref1, ref2, stack, stacks;
@@ -1810,7 +2032,7 @@ module.exports = function(callback) {
   } else {
     protocol = '';
   }
-  url = protocol + "//cdn.thegrid.io/gss/gss-document/1.2.4/gss.document.parser.js";
+  url = protocol + "//cdn.thegrid.io/gss/gss-document/1.2.8/gss.document.parser.js";
   if (location.toString().indexOf('//localhost:8080') > -1) {
     return module.exports.load(protocol + "//localhost:8080/node_modules/gss-document/dist/gss.document.parser.js", callback, function() {
       return module.exports.load(url, callback);
